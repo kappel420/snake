@@ -12,7 +12,7 @@ pipeline {
         }
         stage('Build Image') {
             steps {  
-		sh 'docker build -t kappel420/snake:$BUILD_NUMBER ./pushdockerimage/'
+		sh 'docker build -t kappel420/snake:$BUILD_NUMBER .'
             }
         }
         stage('Docker Login') {
