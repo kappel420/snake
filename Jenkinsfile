@@ -22,7 +22,7 @@ pipeline {
             }
         stage('Docker Push') {
             steps {  
-                sh 'docker push rkappel420/snake:$BUILD_NUMBER'
+                sh 'docker push kappel420/snake:$BUILD_NUMBER'
                 }
             }
         }
